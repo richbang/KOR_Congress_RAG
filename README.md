@@ -36,7 +36,7 @@ KOR_Congress_RAG/dataset/TL_예산결산특별위원회.zip
 KOR_Congress_RAG/dataset/TL_특별위원회.zip
 
 
-위 데이터셋을 'src/make_db.py'를 이용하여 'dataset/processed'경로에 압축을 해제합니다.
+위 데이터셋을 'src/utils/unzip.py'를 이용하여 'dataset/processed'경로에 압축을 해제합니다.
 
 ---
 
