@@ -16,31 +16,48 @@ CUDA 지원 GPU (권장)
 
 
 git clone https://github.com/yourusername/KOR_Congress_RAG.git
+
 cd KOR_Congress_RAG
 
 python -m venv venv
+
 source venv/bin/activate  # Windows: .\venv\Scripts\activate
 
 pip install -r requirements.txt
 
 
 KOR_Congress_RAG/
+
+
 ├── src/
+
+
 │   ├── __init__.py
+
 │   ├── make_db.py          # 벡터 DB 생성
+
 │   ├── query_engine.py     # 검색 엔진
+
 │   ├── config.py           # 설정
+
 │   └── utils/
+
 │       ├── __init__.py
+
 │       ├── prompt_template.py  # 프롬프트 템플릿
+
 │       └── formatters.py      # 문서 포맷팅
+
 ├── vectorDB/               # 벡터 저장소
+
 ├── requirements.txt        # 의존성 목록
+
 └── README.md
 
 
 # 데이터베이스 생성
 cd src
+
 python make_db.py
 
 # 설정 옵션
