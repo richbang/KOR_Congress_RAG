@@ -14,7 +14,7 @@ CUDA 지원 GPU (권장)
 최소 24GB RAM (LLM 모델을 적절히 선택할 것을 권장)
 
 
-
+----
 git clone https://github.com/yourusername/KOR_Congress_RAG.git
 
 cd KOR_Congress_RAG
@@ -25,6 +25,9 @@ source venv/bin/activate  # Windows: .\venv\Scripts\activate
 
 pip install -r requirements.txt
 
+
+
+------
 
 KOR_Congress_RAG/
 
@@ -63,11 +66,17 @@ python make_db.py
 # 설정 옵션
 '''
 config.py에서 다음 설정을 조정할 수 있습니다:
+
 class QueryConfig:
+
     model_name: str = 'BAAI/bge-m3'    # 임베딩 모델
+    
     device: str = 'cuda'                # 실행 장치
+    
     vectorstore_path: str = 'vectorDB'  # 저장소 경로
+    
     num_ctx: str = '10000'             # 컨텍스트 길이
+    
     retriever_k: int = 2               # 검색 결과 수
 '''
 
