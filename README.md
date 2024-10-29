@@ -68,10 +68,7 @@ python make_db.py
 
 config.py에서 다음 설정을 조정할 수 있습니다:
 
----
-
-
-class QueryConfig:
+## class QueryConfig:
 
     model_name: str = 'BAAI/bge-m3'    # 임베딩 모델
     
