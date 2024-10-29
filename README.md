@@ -22,6 +22,24 @@ CUDA 지원 GPU (권장)
 최소 24GB RAM (LLM 모델을 적절히 선택할 것을 권장)
 
 
+
+
+# 데이터셋 위치
+KOR_Congress_RAG/dataset/TL_국정감사.zip
+
+KOR_Congress_RAG/dataset/TL_본회의.zip
+
+KOR_Congress_RAG/dataset/TL_소위원회.zip
+
+KOR_Congress_RAG/dataset/TL_예산결산특별위원회.zip
+
+KOR_Congress_RAG/dataset/TL_특별위원회.zip
+
+
+위 데이터셋을 'src/make_db.py'를 이용하여 'dataset/processed'경로에 압축을 해제합니다.
+
+---
+
 ----
 git clone https://github.com/yourusername/KOR_Congress_RAG.git
 
