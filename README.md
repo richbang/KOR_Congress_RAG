@@ -63,8 +63,9 @@ cd src
 
 python make_db.py
 
+---
 # 설정 옵션
-'''
+
 config.py에서 다음 설정을 조정할 수 있습니다:
 
 class QueryConfig:
@@ -78,7 +79,7 @@ class QueryConfig:
     num_ctx: str = '10000'             # 컨텍스트 길이
     
     retriever_k: int = 2               # 검색 결과 수
-'''
+---
 
 
 # 주요 컴포넌트
